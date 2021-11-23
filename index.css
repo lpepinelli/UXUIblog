@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth !important;
+}
+
 body{
     background-color: #FAFAFA;
     font-family: 'Nunito', sans-serif;
@@ -6,7 +10,15 @@ body{
 }
 
 body p{
-    font-size: 1.5rem;
+    font-size: 1.47rem;
+}
+
+body h2{
+    color:#1E293B;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -77,8 +89,9 @@ body p{
 }
 
 .summary{
-    padding-left: 1rem;
     padding-right: 2rem;
+    position: sticky;
+    top: 2rem;
 }
 
 .summary h5{
@@ -100,7 +113,7 @@ body p{
 .summary a{
     text-decoration: none;
     color:#475569;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
 }
 
 .summary .socialButtons{
@@ -108,4 +121,35 @@ body p{
     justify-content: space-around;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.text .img{
+    display: flex;
+    justify-content: center;
+}
+
+.text li{
+    font-size: 1.47rem;
+}
+
+.footer{
+    background-color: #F43F5E;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.logo-footer{
+    width: 7rem;
+    height: 4rem;
+    border: 0.3rem solid #1E293B;
+    color: #1E293B;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Almarai', sans-serif;
 }
