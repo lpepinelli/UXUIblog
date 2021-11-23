@@ -76,6 +76,36 @@ body p{
     padding: 4rem;
 }
 
-.content .summary{
+.summary{
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
 
+.summary h5{
+    font-weight: bold;
+    color: #1E293B;
+}
+
+.summary hr{
+    border: 1px solid #F43F5E;
+    margin-top: 1px;
+}
+
+.summary ul{
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.summary a{
+    text-decoration: none;
+    color:#475569;
+    font-size: 1.1rem;
+}
+
+.summary .socialButtons{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
