@@ -1,12 +1,17 @@
-html{
+:root {
+    --main-bg-color: #FAFAFA;
+    --brand-color: #F43F5E;
+    --mid-color:#475569;
+    --dark-color: #1E293B;
+    overflow:overlay;
+    overflow-x: hidden;
     scroll-behavior:smooth !important;
 }
 
 body{
-    background-color: #FAFAFA;
+    background-color: var(--main-bg-color);
     font-family: 'Nunito', sans-serif;
-    color: #475569;
-    overflow-x: hidden;
+    color: var(--mid-color);
 }
 
 body p{
@@ -14,7 +19,7 @@ body p{
 }
 
 body h2{
-    color:#1E293B;
+    color:var(--dark-color);
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -32,16 +37,17 @@ body h2{
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-    background: rgba(0,0,0,0.2);
+    background: var(--dark-color);
+    opacity: 0.1;
     -webkit-border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:vertical:active {
-    background: rgba(0,0,0,0.3);
+    background: var(--dark-color);
     -webkit-border-radius: 100px;
 }
 
 .menu{
-    background-color: #F43F5E;
+    background-color: var(--brand-color);
     width: 100%;
     height: 6rem;
     display: flex;
@@ -52,13 +58,26 @@ body h2{
 .logo{
     width: 12rem;
     height: 4rem;
-    border: 0.3rem solid #1E293B;
-    color: #1E293B;
+    border: 0.3rem solid var(--dark-color);
+    color: var(--dark-color);
     font-size: 1.8em;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Almarai', sans-serif;
+}
+
+.darkmode{
+    background: none repeat scroll 0 0 transparent;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    border: 0.2rem solid var(--dark-color);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3rem;
+    border-spacing: 0;
 }
 
 .title{
@@ -69,7 +88,7 @@ body h2{
 .title h1{
     font-family: 'Playfair Display', serif;
     font-size: 4.4rem;
-    color:#1E293B;
+    color:var(--dark-color);
 }
 
 .hero{
@@ -96,7 +115,7 @@ body h2{
 
 .summary h5{
     font-weight: bold;
-    color: #1E293B;
+    color: var(--dark-color);
 }
 
 .summary hr{
@@ -112,7 +131,7 @@ body h2{
 
 .summary a{
     text-decoration: none;
-    color:#475569;
+    color:var(--mid-color);
     font-size: 1.12rem;
 }
 
@@ -133,7 +152,7 @@ body h2{
 }
 
 .footer{
-    background-color: #F43F5E;
+    background-color: var(--brand-color);
     width: 100%;
     height: 15rem;
     display: flex;
@@ -145,8 +164,8 @@ body h2{
 .logo-footer{
     width: 7rem;
     height: 4rem;
-    border: 0.3rem solid #1E293B;
-    color: #1E293B;
+    border: 0.3rem solid var(--dark-color);
+    color: var(--dark-color);
     font-size: 1.8em;
     display: flex;
     justify-content: center;
